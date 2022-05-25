@@ -1,0 +1,33 @@
+body{
+    padding: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        " video1 video2 video3"
+    ;
+}
+.video{
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bigVideo{
+    width: 600px;
+    height: 500px;
+}
+
+#video1{
+    grid-area: video1;
+}
+
+#video2{
+    grid-area: video2;
+}
+
+#video3{
+    grid-area: video3;
+}

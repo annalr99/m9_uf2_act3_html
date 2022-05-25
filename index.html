@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <video muted loop id="video1" class="video" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+        <source src="./video/thor.mp4" type="video/mp4">
+    </video>
+
+    <video muted loop id="video2" class="video" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+        <source src="./video/sirenita.mp4" type="video/mp4">
+    </video>
+
+    <video muted loop id="video3" class="video" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+        <source src="./video/ironman.mp4" type="video/mp4">
+    </video>
+
+    <script>
+      
+        function playVideo(video){
+            video.play();
+            video.classList.remove('video');
+            video.classList.add('bigVideo');
+            
+        }
+
+        function stopVideo(video){
+            video.load();
+            video.classList.add('video');
+            video.classList.remove('bigVideo');
+        }
+    
+    </script>
+</body>
+</html>
